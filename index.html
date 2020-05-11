@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d17b48dd98.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
     <title>Glozzom</title>
 </head>
@@ -139,6 +140,118 @@
       </div>
     </section>
 
+    <!--VIDEO PLAY-->
+    <section id="video-play">
+      <div class="dark-overlay">
+        <div class="row">
+          <div class="col">
+            <div class="container p-5">
+              <!--the below is referenced from geeksforgeeks and tutorialpublic-->
+              <a href="#videoModal" class="video" data-toggle="modal" >
+              <i class="fas fa-play fa-3x"></i>
+            </a>
+            <h1>See What We Do</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--VIDEO MODAL-->
+    <div class="modal fade" id="videoModal" tabindex="-1" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"> 
+            <h4 class="modal-title align-self-center ml-auto">GeeksforGeeks</h4> 
+            <button type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-hidden="true">×</button> 
+            <!--for autoplay function- i inserted ?autoplay=1 at the end of the src video url or if u dont want autoplay.just remove the autoplay-->
+        </div> 
+          <div class="modal-body">
+            <iframe id="Geeks3" class="embed-responsive-item" src="https://www.youtube.com/embed/Jfrjeg26Cwk" frameborder="0" height="350" width="100%" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--PHOTO GALLERY-->
+    <section id="gallery" class="py-5">
+      <div class="container">
+        <h1 class="text-center">Photo Gallery</h1>
+        <p class="text-center lead">Check out our photos</p>
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+               <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid mb-4">
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a href="https://source.unsplash.com/random/561x561" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+               <img src="https://source.unsplash.com/random/561x561" alt="" class="img-fluid mb-4">
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a href="https://source.unsplash.com/random/562x562" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+               <img src="https://source.unsplash.com/random/562x562" alt="" class="img-fluid mb-4">
+            </a>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <a href="https://source.unsplash.com/random/563x563" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+               <img src="https://source.unsplash.com/random/563x563" alt="" class="img-fluid mb-4">
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a href="https://source.unsplash.com/random/564x564" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+               <img src="https://source.unsplash.com/random/564x564" alt="" class="img-fluid mb-4">
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a href="https://source.unsplash.com/random/565x565" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+               <img src="https://source.unsplash.com/random/565x565" alt="" class="img-fluid mb-4">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--NEWSLETTER-->
+    <section id="newsletter" class="text-center p-5 bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="display-4">Sign Up For Our Newsletter</h1>
+            <p class="lead text-center">lorem dolor bacon hight wansbe batowski Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis eum rerum, illo a enim cupiditate consequuntur quae ex consequatur ut!</p>
+            <form action="" class="form-inline justify-content-center">
+              <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Name">
+              <input type="text" class="form-control mb-2 mr-2" placeholder="Enter E-mail">
+              <button class="btn btn-primary mb-2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer id="main-footer" class="text-center p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy; <span id="year"></span> Glozzom</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -147,6 +260,7 @@ crossorigin="anonymous"></script>
   crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
   crossorigin="anonymous"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
 <script>
     //get the current year fot the copyright
     $('#year').text(new Date().getFullYear());
@@ -156,6 +270,34 @@ crossorigin="anonymous"></script>
       interval: 6000,
       pause: 'hover'
     });
+//light box
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+
+  //video play
+  $(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = $("#Geeks3").attr('src');
+    
+    /* Remove iframe src attribute on page load to
+    prevent autoplay in background */
+    $("#Geeks3").attr('src', '');
+	
+	/* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed */
+    $("#videoModal").on('shown.bs.modal', function(){
+        $("#Geeks3").attr('src', url);
+    });
+    
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#videoModal").on('hide.bs.modal', function(){
+        $("#Geeks3").attr('src', '');
+    });
+});
 
 </script>
 </body>
