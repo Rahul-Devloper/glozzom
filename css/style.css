@@ -84,3 +84,18 @@
       margin-top: -50px!important;
   }
  
+  #faq .card{
+      border: #444;
+  }
+  #faq a{
+      color: white;
+      text-decoration: none;
+  }
+  #faq .card-body,
+  #faq .card-header{
+      background-color: #333;
+  }
+#main-footer{
+    background-color: black;
+    color: white;
+}
