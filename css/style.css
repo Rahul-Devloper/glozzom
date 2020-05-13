@@ -99,3 +99,37 @@
     background-color: black;
     color: white;
 }
+/* css animations that i added  */
+#gallery img{
+    transition: 0.5s;
+}
+#gallery img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+#home-icons i:hover,
+#about img:hover
+{
+    transform: translate3d(-10px,10px,0px);
+}
+#home-icons i,
+#about img
+{
+    transition: transform .2s ease-out;
+}
+#staff img:hover{
+    transform: translate3d(0px,-10px,0px);
+    filter: opacity(.9);
+
+}
+#staff img{
+    transition: transform .2s ease-out;
+}
+#about img:hover
+{
+    transform: translate3d(0px,-10px,0px);
+}
+#about img
+{
+    transition: transform .2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
